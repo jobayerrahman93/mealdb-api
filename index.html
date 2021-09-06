@@ -13,22 +13,62 @@
     </style>
 </head>
 <body>
+
+  <!-- navbar -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">Hungry Hook</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto pe-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+
+  <!-- main -->
     
 <div class="container">
   
-  <h1 class="text-center text-success my-4">Search by food name </h1>
+<!-- <div class="text-center pt-5">
+  <h1 class="d-inline text-danger fw-bold my-4 border p-2">Hungry Hook</h1>
+
+</div> -->
 
   <!-- detail -->
-      <div id="meal-details" class="card mx-auto border-0" style="width: 18rem;">
+      <div id="meal-details" class="card mx-auto border-0 my-3" style="width: 18rem;">
           
         </div>
 
-          
+       
   
       <!-- search area -->
       <div class="input-group mb-3 w-50 mx-auto">
           <input id="foodInput" type="text" class="form-control" placeholder="search by food name" aria-label="search by food name" aria-describedby="button-search">
-          <button onclick="searchFood()" class="btn btn-outline-success" type="button" id="button-search">Button</button>
+          <button onclick="searchFood()" class="btn btn-danger" type="button" id="button-search">Search</button>
         </div>
   
       <!-- spinners section -->
@@ -44,16 +84,20 @@
          
       
         </div>
-  
-  
-  
+
+        <div id="not-found" class=" d-none text-center text-danger mt-5">
+          <h1>OPPS! No result found</h1>
+        </div>
+       
   
 </div>
 
 
 
 
-
+<div class="text-center">
+  <span class="text-center">Develop by: <a href="https://www.facebook.com/jobayercse71/">Jobayer Rahman</a></span>
+</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
